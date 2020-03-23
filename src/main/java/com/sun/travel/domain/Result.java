@@ -25,7 +25,15 @@ public class Result<T> {
         return r;
     }
 
-    public static <T> Result<T> fail(String code, String msg) {
+    public static <T> Result<T> fail(String msg) {
+        Result<T> r = new Result();
+        r.setSuccess(false);
+        r.setCode("500");
+        r.setMsg(msg);
+        return r;
+    }
+
+    public static <T> Result<T> fail(String code,String msg) {
         Result<T> r = new Result();
         r.setSuccess(false);
         r.setCode(code);

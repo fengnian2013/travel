@@ -10,4 +10,7 @@ public class UserContextConstant {
     public static final String FRONT_USER_SESSION_NAME="frontUser";
     public static final String HTTP_AUTH_FAIL="401";
     public static final String HTTP_AUTH_FAIL_MSG="校验登录失败";
+
+
+    public static final String BACK_USER_SESSION_NAME="frontUser";
 }

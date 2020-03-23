@@ -95,7 +95,7 @@ public class MysqlGenerator {
         cfg.setFileOutConfigList(focList);
         mpg.setCfg(cfg);
         mpg.setTemplate(new TemplateConfig().setXml(null));
-       *//* TemplateConfig templateConfig = new TemplateConfig();
+        *//*TemplateConfig templateConfig = new TemplateConfig();
         templateConfig.setEntity("templates/custommodel");
         mpg.setTemplate(templateConfig);*//*
         // 策略配置

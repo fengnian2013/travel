@@ -6,6 +6,8 @@ import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @class: InterceptorConfig <br>
@@ -21,7 +23,8 @@ public class InterceptorConfig implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         //加入顺序及执行顺序
-        registry.addInterceptor(frontUserInterceptor).addPathPatterns("/**").excludePathPatterns("/login")
+        List<String> excludePath = new ArrayList<>();
+        registry.addInterceptor(frontUserInterceptor).addPathPatterns("/**")
                 .excludePathPatterns("/swagger-resources/**", "/webjars/**", "/v2/**", "/swagger-ui.html/**");
     }
 }

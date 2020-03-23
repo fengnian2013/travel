@@ -8,10 +8,7 @@ import lombok.Data;
  * @date: 2020-03-12 15:09
  */
 @Data
-public class FrontUserInfo {
-    private String userAccount;
-
+public class BackUserInfo {
     private String userNickName;
     private int userId;
-    private String userPhone;
 }
